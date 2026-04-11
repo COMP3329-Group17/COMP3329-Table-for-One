@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float rotationSpeed = 10f;
+    public float itemRotateSpeed = 1500f; // Speed for spinning the clue
     public float gravity = -20f;
     private float verticalVelocity;
 
@@ -20,7 +21,11 @@ public class PlayerController : MonoBehaviour
     public float mouseSensitivity = 2f;
     public float tpDistance = 4f; // How far the camera is in 3rd person
     public float fpHeight = 1.6f; // How high the eyes are in 1st person
-    
+
+    [Header("Inspection Settings")]
+    public Transform inspectionTarget; // The "Holder" child of the camera
+    private GameObject currentItem;    // The actual object we are holding
+
     private CharacterController controller;
     private Transform cam;
     private float pitch; // Up/Down rotation
@@ -64,12 +69,72 @@ public class PlayerController : MonoBehaviour
                 break;
 
             case PlayerState.Inspecting:
-                isFirstPerson = true; // Force 1st person for that "horror" close-up
-                HandleCamera();       // Still let them look around a bit
-                // Notice: HandleMovement() is NOT called here. Player is frozen!
+                HandleInspectionRotation(); // Spin the object!
+
+                // EXIT: Press E to put it away
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    StopInspecting();
+                }
                 break;
         }
     }
+
+    [Header("Inspection Visuals")]
+    public Light inspectionLight;      // Drag a small light here
+    public GameObject blurOverlay;    // Drag your "InspectionOverlay" UI here
+
+    // Inspecting logic
+    public void StartInspecting(GameObject obj)
+    {
+        currentItem = obj   ;
+        SetState(PlayerState.Inspecting);
+
+        // Snap item to the holder in front of camera
+        obj.transform.position = inspectionTarget.position;
+        obj.transform.SetParent(inspectionTarget);
+
+        if (inspectionLight != null) { 
+            inspectionLight.enabled = true;
+            Debug.Log("UI Overlay should be VISIBLE now.");
+        }
+        if (blurOverlay != null) blurOverlay.SetActive(true); // Show the dark screen
+
+        // Optional: Disable physics so it doesn't fly away
+        if (obj.TryGetComponent<Rigidbody>(out Rigidbody rb)) rb.isKinematic = true;
+    }
+
+    // Item rotation while in inspecting state
+    void HandleInspectionRotation()
+    {
+        if (currentItem == null) return;
+
+        // Rotate object when Left Mouse is held
+        if (Input.GetMouseButton(0))
+        {
+            float rotX = Input.GetAxis("Mouse X") * itemRotateSpeed * Time.deltaTime;
+            float rotY = Input.GetAxis("Mouse Y") * itemRotateSpeed * Time.deltaTime;
+
+            currentItem.transform.Rotate(Vector3.up, -rotX, Space.World);
+            currentItem.transform.Rotate(Vector3.right, rotY, Space.World);
+        }
+    }
+
+    // Exit inspecting state
+    void StopInspecting()
+    {
+        if (currentItem != null)
+        {
+
+            if (inspectionLight != null) inspectionLight.enabled = false;
+            if(blurOverlay != null) blurOverlay.SetActive(false); // Hide the dark screen
+            currentItem.SetActive(false); // Make it disappear (into inventory)
+            currentItem.transform.SetParent(null);
+            currentItem = null;
+        }
+        SetState(PlayerState.Exploration);
+    }
+
 
     void HandleCamera()
     {

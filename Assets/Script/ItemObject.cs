@@ -4,13 +4,40 @@ using UnityEngine;
 public class ItemObject : MonoBehaviour
 {
     public ItemData referenceData; // Drag your ScriptableObject here
-    public GameObject hoverLight; // Drag a Point Light child here in the Inspector
+    private Renderer objRenderer;
+    private Color originalEmissionColor;
+
+    [Header("Highlight Settings")]
+    public Color highlightColor = Color.yellow;
+    [Range(0, 5)] public float glowIntensity = 2f;
 
     // Makes an object "glow" when the player looks at it
     // NOT WORKING ATM
-    public void ToggleHighlight(bool state)
+    void Start()
     {
-        if (hoverLight != null) hoverLight.SetActive(state);
+        objRenderer = GetComponent<Renderer>();
+        // Store the starting color (usually black/off)
+        if (objRenderer != null)
+        {
+            originalEmissionColor = objRenderer.material.GetColor("_EmissionColor");
+        }
+    }
+
+    public void ToggleHighlight(bool isOn)
+    {
+        if (objRenderer == null) return;
+
+        if (isOn)
+        {
+            // Enable the glow by multiplying color by intensity
+            objRenderer.material.SetColor("_EmissionColor", highlightColor * glowIntensity);
+            objRenderer.material.EnableKeyword("_EMISSION");
+        }
+        else
+        {
+            // Turn the glow back to original (off)
+            objRenderer.material.SetColor("_EmissionColor", originalEmissionColor);
+        }
     }
 
     // This function runs when the player presses 'E' on the object.
@@ -28,12 +55,12 @@ public class ItemObject : MonoBehaviour
             // If the player script exists, switch them to 'Inspecting' mode (freezes movement).
             if (player != null)
             {
-                player.SetState(PlayerController.PlayerState.Inspecting);
-                Debug.Log("Now inspecting: " + referenceData.itemName);
+                // Handle item rotation
+                player.StartInspecting(this.gameObject);
             }
 
-            // Hide the object from the world since it's now 'in the pocket'
-            gameObject.SetActive(false);
+
+     
         }
     }
 }
