@@ -3,9 +3,15 @@
 --- !u!162 &1
 EditorUserSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 6
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
+      value: 06085707500008595c575f7b45205e4410154e797c2c7369297c1b30e6b83560
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 07085104540658580f0f097b14210644444e417d7f2b27337c794f67b0b1326f
+      flags: 0
+    RecentlyUsedSceneGuid-2:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
       flags: 0
     vcSharedLogLevel:
@@ -28,3 +34,4 @@ EditorUserSettings:
   m_VCAllowAsyncUpdate: 1
   m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1
+  m_RemoveUnusedReferencesFromMaterial: 0
