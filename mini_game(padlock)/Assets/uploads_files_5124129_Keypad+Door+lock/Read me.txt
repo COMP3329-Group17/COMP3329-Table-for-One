@@ -1,0 +1,30 @@
+Hello there ;D
+
+If you need any help with this model or have a question/querie –
+please do not hesitate to contact me. I will be happy to help you.
+
+Contact: plaggy.net@gmail.com
+
+Free 3d model download with CC0/Public Domain dedicated license:
+https://plaggy.sellfy.store/cc0publicdomain/
+
+If the free 3d models was helpful to you, please consider leaving a tip:
+https://www.paypal.com/biz/fund?id=V4VY8CLBVT4B4
+
+Or you can support me on Patreon:
+https://www.patreon.com/plaggy
+
+
+Best Regards,
+
+Marcel Plagmann
+plaggy.net
+
+Royalty Free License
+
+Royalty Free License allows you to use the product without the need to pay 
+royalties or other license fees for multiple uses, per volume sold, or some 
+time period of use or sales. Products published with this license may not be 
+sold, given, or assigned to another person or entity in the form it is downloaded 
+from the site, but can be used in your commercial projects multiple times after 
+paying for it just once.
