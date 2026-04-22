@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: CC8WsX+uVXJOqhHGYd3ZzwjHzRVGRraUrtJsf2R2JB/wCyU+/mOnVko=
+guid: WnhNvSmvBS8KqGwzsN0WyiuWWJGpsVjwMBWOq16A8ps4nAufFcfW7V0=
 ModelImporter:
   serializedVersion: 22361
   internalIDToNameTable: []
@@ -24,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     aCLCompressionLevel: 3
     aCLCurvePrecision: 0.01
     aCLFastSampleMode: 1
@@ -45,8 +45,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    totalVerticesCount: 1864
-    totalTrianglesCount: 1986
+    totalVerticesCount: 12216
+    totalTrianglesCount: 21506
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
@@ -92,17 +92,61 @@ ModelImporter:
       ignoreSimpleMesh: 0
       transformScaleState: 0
       isPossibleOverflow: 0
-    virtualGeometryPlatformSettings: []
-    selectedVGMeshes:
-    - index: 0
-      meshName: KeypadDoor
-      lodLevel: 0
-      meshGeometryBuffer: 0
-    supportVGMeshes:
-    - index: 0
-      meshName: KeypadDoor
-      lodLevel: 0
-      meshGeometryBuffer: 0
+    virtualGeometryPlatformSettings:
+    - serializedVersion: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      buildTarget: DefaultVirtualGeometryPlatform
+      positionPrecision: -2147483648
+      normalPrecision: -2147483648
+      tangentPrecision: -2147483648
+      detailedTriangleCount: 0
+      detailedVertexCount: 0
+      rootPageSize: 0
+      streamablePageSize: 0
+      reserveTrianglePercent: 100
+      reserveDetailLevel: 0
+    - serializedVersion: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      buildTarget: Standalone
+      positionPrecision: -2147483648
+      normalPrecision: -2147483648
+      tangentPrecision: -2147483648
+      detailedTriangleCount: 0
+      detailedVertexCount: 0
+      rootPageSize: 0
+      streamablePageSize: 0
+      reserveTrianglePercent: 100
+      reserveDetailLevel: 0
+    - serializedVersion: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      buildTarget: iPhone
+      positionPrecision: -2147483648
+      normalPrecision: -2147483648
+      tangentPrecision: -2147483648
+      detailedTriangleCount: 0
+      detailedVertexCount: 0
+      rootPageSize: 0
+      streamablePageSize: 0
+      reserveTrianglePercent: 100
+      reserveDetailLevel: 0
+    - serializedVersion: 0
+      overridden: 0
+      ignorePlatformSupport: 0
+      buildTarget: Android
+      positionPrecision: -2147483648
+      normalPrecision: -2147483648
+      tangentPrecision: -2147483648
+      detailedTriangleCount: 0
+      detailedVertexCount: 0
+      rootPageSize: 0
+      streamablePageSize: 0
+      reserveTrianglePercent: 100
+      reserveDetailLevel: 0
+    selectedVGMeshes: []
+    supportVGMeshes: []
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -136,9 +180,9 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
