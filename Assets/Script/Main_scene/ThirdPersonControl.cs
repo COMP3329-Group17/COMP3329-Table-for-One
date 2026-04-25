@@ -120,8 +120,15 @@ public class PlayerController : MonoBehaviour
 
         if (isFirstPerson)
         {
-            // Position camera at eye height
-            cam.position = transform.position + Vector3.up * (fpHeight * scale);
+            // 1. Calculate the base eye height (what you just adjusted to 1.6)
+            Vector3 eyePosition = transform.position + Vector3.up * (fpHeight * scale);
+
+            // 2. Add a small 'forward' offset so we aren't looking from inside the brain
+            // 0.15f pushes it forward about 15cm. Adjust this if you still see his nose!
+            float forwardOffset = 0.15f;
+            Vector3 finalPosition = eyePosition + (transform.forward * forwardOffset);
+
+            cam.position = finalPosition;
             cam.rotation = Quaternion.Euler(pitch, yaw, 0);
 
             // Turn the whole body with the camera in 1st person
@@ -206,7 +213,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     // Helper to change states and handle the cursor
-    public void SetState(PlayerState newState)
+    public void SetState(PlayerState newState)  
     {
         currentState = newState;
         bool isExploring = (newState == PlayerState.Exploration);
