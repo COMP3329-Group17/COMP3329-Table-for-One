@@ -13,12 +13,7 @@ public class TextHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     private void Start() {
         highlight.SetActive(false);
         text.enableVertexGradient = true;
-        text.colorGradient = new VertexGradient(
-            redGradient.topLeft,      
-            redGradient.topRight,
-            redGradient.bottomLeft,
-            redGradient.bottomRight);
-
+        text.colorGradientPreset = redGradient;
     }
 
     public void OnPointerEnter(PointerEventData data)
@@ -27,13 +22,7 @@ public class TextHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             - change text to blue
             - show red highlight graphic
         */
-        text.enableVertexGradient = true;
-        text.colorGradient = new VertexGradient(
-            blueGradient.topLeft,      
-            blueGradient.topRight,
-            blueGradient.bottomLeft,
-            blueGradient.bottomRight);
-        
+        text.colorGradientPreset = blueGradient;        
         highlight.SetActive(true);
     }
 
@@ -43,14 +32,7 @@ public class TextHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             - change text back to red
             - hide red highlight graphic
         */
-
-        text.enableVertexGradient = true;
-        text.colorGradient = new VertexGradient(
-            redGradient.topLeft,      
-            redGradient.topRight,
-            redGradient.bottomLeft,
-            redGradient.bottomRight);
-
+        text.colorGradientPreset = redGradient;
         highlight.SetActive(false);
     }
 

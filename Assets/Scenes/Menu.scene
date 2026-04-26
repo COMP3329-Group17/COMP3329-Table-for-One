@@ -234,7 +234,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -295,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 188}
-  m_SizeDelta: {x: 45.4931, y: 34.7086}
+  m_AnchoredPosition: {x: -5, y: 192}
+  m_SizeDelta: {x: 62.3826, y: 34.7086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &292637202
 MonoBehaviour:
