@@ -17,4 +17,4 @@
 *.svd
 *.pdb
 *.opendb
-*.IDB
+*.IDB.DS_Store
