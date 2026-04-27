@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float rotationSpeed = 10f;
+    public float rotationSpeed = 10f; // Speed of the U-Turn
     public float itemRotateSpeed = 1500f;
     public float gravity = -9.81f;
     private float verticalVelocity;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     [Header("Camera Settings")]
     public Transform cameraTarget;
     public float mouseSensitivity = 2f;
-    public float tpDistance = 1.5f;
+    public float tpDistance = 3.0f; // Increased for better view
     public float fpHeight = 1.8f;
 
     [Header("Inspection Settings")]
@@ -43,12 +43,10 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        // 1. Assign references FIRST
         controller = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
         if (Camera.main != null) cam = Camera.main.transform;
 
-        // 2. Teleport logic AFTER references are set
         if (hasSavedPosition)
         {
             controller.enabled = false;
@@ -57,7 +55,6 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
         }
 
-        // Always show mouse
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
@@ -75,6 +72,12 @@ public class PlayerController : MonoBehaviour
         {
             InventoryMG inv = FindFirstObjectByType<InventoryMG>();
             if (inv != null) inv.ToggleInventory();
+        }
+
+        //trying to unlock a door
+        if (Input.GetKeyDown(KeyCode.F) && currentState == PlayerState.Exploration)
+        {
+            CheckForLock();
         }
 
         switch (currentState)
@@ -103,11 +106,36 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        // Move relative to character's forward (which follows mouse)
-        Vector3 moveDir = (transform.forward * v + transform.right * h).normalized;
-        moveDir.y = 0;
+        // 1. Get Camera directions (ignoring tilt)
+        Vector3 camForward = cam.forward;
+        Vector3 camRight = cam.right;
+        camForward.y = 0;
+        camRight.y = 0;
+        camForward.Normalize();
+        camRight.Normalize();
 
-        controller.Move(moveDir * moveSpeed * Time.deltaTime);
+        // 2. Calculate Move Direction based on Input
+        Vector3 desiredMoveDir = (camForward * v + camRight * h).normalized;
+
+        if (desiredMoveDir.magnitude >= 0.1f)
+        {
+            if (isFirstPerson)
+            {
+                // In First Person, the body still snaps to the mouse yaw
+                transform.rotation = Quaternion.Euler(0, yaw, 0);
+            }
+            else
+            {
+                // IN THIRD PERSON: This creates the U-Turn effect
+                // The character rotates to face the direction of movement
+                Quaternion targetRotation = Quaternion.LookRotation(desiredMoveDir);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            }
+
+            controller.Move(desiredMoveDir * moveSpeed * Time.deltaTime);
+        }
+
+        // Apply Gravity
         controller.Move(Vector3.up * verticalVelocity * Time.deltaTime);
 
         if (animator != null)
@@ -125,17 +153,18 @@ public class PlayerController : MonoBehaviour
 
         float scale = transform.lossyScale.y;
 
-        // Make character body rotate with mouse
-        transform.rotation = Quaternion.Euler(0, yaw, 0);
-
         if (isFirstPerson)
         {
+            // Body follows mouse yaw instantly in FP
+            transform.rotation = Quaternion.Euler(0, yaw, 0);
+
             Vector3 eyePosition = transform.position + Vector3.up * (fpHeight * scale);
             cam.position = eyePosition + (transform.forward * 0.15f);
             cam.rotation = Quaternion.Euler(pitch, yaw, 0);
         }
         else
         {
+            // THIRD PERSON: Camera orbits, but body does NOT follow mouse instantly
             Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
             Vector3 targetPos = transform.position + Vector3.up * (fpHeight * scale);
             Vector3 desiredPos = targetPos + (rotation * Vector3.back) * (tpDistance * scale);
@@ -199,7 +228,6 @@ public class PlayerController : MonoBehaviour
 
     public void ExitMinigame()
     {
-        // Change "MainScene" to your actual scene name!
         SceneManager.LoadScene("MainScene");
     }
 
@@ -208,6 +236,23 @@ public class PlayerController : MonoBehaviour
         currentState = newState;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+    void CheckForLock()
+    {
+        Ray ray = new Ray(cam.position, cam.forward);
+        if (Physics.Raycast(ray, out RaycastHit hit, 3f))
+        {
+            if (hit.collider.TryGetComponent(out KeyHole lockScript))
+            {
+                // We find the InventoryMG script
+                InventoryMG inv = FindFirstObjectByType<InventoryMG>();
+                if (inv != null)
+                {
+                    // We pass the activeItem we just created above!
+                    lockScript.AttemptUnlock(InventoryMG.activeItem);
+                }
+            }
+        }
     }
 
     #endregion
