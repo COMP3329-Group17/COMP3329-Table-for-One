@@ -1,42 +1,82 @@
-// This is the brain of inventory feature, Create Empty in Unity Hierarchy, and put the script in it. 
 using UnityEngine;
-//Library for "List"
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class InventoryMG : MonoBehaviour
 {
-    // Create a list to store the player's item 
-    public List<ItemData> items = new List<ItemData>();
+    [Header("UI Windows")]
+    public GameObject inventoryPanel;
+    public Image activeIconHUD;
 
-    // Function for adding or picking up an item
-    public void AddItem(ItemData item)
+    [Header("Grid Setup")]
+    public Transform slotParent;
+    public GameObject slotPrefab;
+
+    // GLOBAL MEMORY: This list stays alive even if the script is reset
+    public static List<ItemData> savedItems = new List<ItemData>();
+    public static ItemData savedHeldItem;
+
+    void Start()
     {
-        // put the item into the list
-        items.Add(item);
-        Debug.Log("Added item: " + item.itemName);
+        if (inventoryPanel != null) inventoryPanel.SetActive(false);
+
+        // When the scene loads, refresh the UI using the static memory
+        RefreshUI();
+        UpdateActiveSlotUI();
     }
 
-    // Function for removing an item
-    public void RemoveItem(ItemData item)
+    public void ToggleInventory()
     {
-        if (items.Contains(item))
+        if (inventoryPanel == null) return;
+        bool isOpening = !inventoryPanel.activeSelf;
+        inventoryPanel.SetActive(isOpening);
+        if (isOpening) RefreshUI();
+    }
+
+    public void AddItem(ItemData item)
+    {
+        // Add to the static list, not a local one
+        savedItems.Add(item);
+        RefreshUI();
+    }
+
+    public void RefreshUI()
+    {
+        if (slotParent == null || slotPrefab == null) return;
+
+        // Clear existing visual slots
+        foreach (Transform child in slotParent) Destroy(child.gameObject);
+
+        // Rebuild from static memory
+        foreach (ItemData item in savedItems)
         {
-            // remove the item into the list
-            items.Remove(item);
-            Debug.Log("Removed item: " + item.itemName);
+            GameObject newSlot = Instantiate(slotPrefab, slotParent);
+            Image icon = newSlot.transform.Find("Backpack_icon").GetComponent<Image>();
+            icon.sprite = item.icon;
+
+            Button btn = newSlot.GetComponent<Button>();
+            btn.onClick.AddListener(() => SelectItem(item));
+        }
+    }
+
+    void SelectItem(ItemData item)
+    {
+        savedHeldItem = item;
+        UpdateActiveSlotUI();
+    }
+
+    void UpdateActiveSlotUI()
+    {
+        if (activeIconHUD == null) return;
+
+        if (savedHeldItem == null)
+        {
+            activeIconHUD.enabled = false;
         }
         else
         {
-            Debug.Log("Item not found: " + item.itemName);
-        }
-    }
-
-    public void DisplayInventory()
-    {
-        Debug.Log("Inventory:");
-        foreach (var item in items)
-        {
-            Debug.Log("- " + item.itemName);
+            activeIconHUD.enabled = true;
+            activeIconHUD.sprite = savedHeldItem.icon;
         }
     }
 }
