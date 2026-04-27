@@ -3,7 +3,8 @@ guid: DXlJtS/+W39LKzPTsEoYEhn+EG59WUHgEuSmBTe2togWc6tsAfAcl+U=
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - interactPromptUI: {fileID: 6536025099399304941, guid: 46806435b826bcc4188d96498cc83190, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

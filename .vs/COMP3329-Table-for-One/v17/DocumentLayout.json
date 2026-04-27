@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\ThirdPersonControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Main_scene\\ThirdPersonControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Chinese_Zodiacs\\Exit_Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Chinese_Zodiacs\\Exit_Logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ThirdPersonControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ThirdPersonControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Mini_game_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Mini_game_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Player\u0027s_ Detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Player\u0027s_ Detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ItemObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ItemObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ItemData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ItemData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\RiceBinSearchMiniGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\RiceBinSearchMiniGame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\Mini_game_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Main_scene\\Mini_game_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,99 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ThirdPersonControl.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
-              "RelativeToolTip": "Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
-              "ViewState": "AgIAAL4AAAAAAAAAAAAqwNAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-23T17:51:49.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Exit_Logic.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Chinese_Zodiacs\\Exit_Logic.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Chinese_Zodiacs\\Exit_Logic.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Chinese_Zodiacs\\Exit_Logic.cs",
-              "RelativeToolTip": "Assets\\Script\\Chinese_Zodiacs\\Exit_Logic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T18:49:33.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Mini_game_trigger.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Mini_game_trigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Mini_game_trigger.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Mini_game_trigger.cs",
-              "RelativeToolTip": "Assets\\Script\\Mini_game_trigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\Mini_game_trigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Main_scene\\Mini_game_trigger.cs",
+              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\Mini_game_trigger.cs",
+              "RelativeToolTip": "Assets\\Script\\Main_scene\\Mini_game_trigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T17:40:23.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player\u0027s_ Detection.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Player\u0027s_ Detection.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\u0027s_ Detection.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Player\u0027s_ Detection.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\u0027s_ Detection.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T16:46:05.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ThirdPersonControl.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ThirdPersonControl.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ThirdPersonControl.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ThirdPersonControl.cs",
-              "RelativeToolTip": "Assets\\Script\\ThirdPersonControl.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAawEkAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T09:34:00.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ItemObject.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ItemObject.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ItemObject.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ItemObject.cs",
-              "RelativeToolTip": "Assets\\Script\\ItemObject.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAwDoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T08:58:39.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ItemData.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ItemData.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ItemData.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\ItemData.cs",
-              "RelativeToolTip": "Assets\\Script\\ItemData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T10:14:16.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RiceBinSearchMiniGame.cs",
-              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\RiceBinSearchMiniGame.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\RiceBinSearchMiniGame.cs",
-              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\RiceBinSearchMiniGame.cs",
-              "RelativeToolTip": "Assets\\Script\\RiceBinSearchMiniGame.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T10:10:17.396Z"
+              "WhenOpened": "2026-04-27T15:35:50.783Z",
+              "EditorCaption": ""
             }
           ]
         }
