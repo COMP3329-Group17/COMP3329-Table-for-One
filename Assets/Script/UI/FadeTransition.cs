@@ -24,7 +24,7 @@ public class SceneTransitionManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
+    public void Start()
     {
         StartCoroutine(FadeIn());
     }
