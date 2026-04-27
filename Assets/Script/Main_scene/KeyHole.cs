@@ -26,14 +26,32 @@ public class KeyHole : MonoBehaviour
         if (playerActiveItem == requiredItem)
         {
             Debug.Log(unlockMessage);
-
+            
             if (targetAnimator != null)
             {
                 targetAnimator.SetTrigger(animationTrigger);
             }
 
-            // Optional: Remove the item after use
-            // InventoryMG.Instance.RemoveItem(playerActiveItem); 
+            BoxCollider doorCollider = GetComponent<BoxCollider>();
+            if (doorCollider != null)
+            {
+                Destroy(doorCollider);
+                // Alternatively, use: doorCollider.enabled = false;
+            }
+            // REMOVE THE ITEM FROM MEMORY
+            InventoryMG.savedItems.Remove(playerActiveItem);
+
+            // CLEAR THE ACTIVE HAND (So the icon disappears from the HUD)
+            InventoryMG.activeItem = null;
+
+            // REFRESH THE BACKPACK UI
+            // We find the manager in the scene and tell it to redraw the slots
+            InventoryMG inv = FindFirstObjectByType<InventoryMG>();
+            if (inv != null)
+            {
+                inv.RefreshUI();
+                inv.UpdateActiveSlotUI();
+            }
         }
         else
         {

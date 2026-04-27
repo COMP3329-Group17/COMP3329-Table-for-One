@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 259632590}
   - component: {fileID: 259632589}
   - component: {fileID: 259632592}
-  m_Layer: 0
+  m_Layer: 6
   m_HasEditorInfo: 1
   m_Name: note
   m_TagString: Untagged
@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb0d807b155788b46a0d82790db50b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  referenceData: {fileID: 11400000, guid: 34256d3f65d87e741bb183870bbc1faa, type: 2}
+  referenceData: {fileID: 11400000, guid: 8537c964171868e4fbb619fb86cc00d7, type: 2}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   glowIntensity: 2
 --- !u!1 &276403034 stripped
@@ -3728,7 +3728,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4940,33 +4940,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.03062642, y: 0.0004235943, z: 0.005330758}
   m_Center: {x: 0.010208802, y: -0.0000000037252907, z: 1.5892562e-16}
---- !u!1 &1143792897 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1744351235588130715, guid: 06da92ff77240497895afaccde98c340, type: 3}
-  m_PrefabInstance: {fileID: 1625093987}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1143792901
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143792897}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3455718460912964539, guid: 7d18d11ef623a4148b992558088e6a25, type: 3}
 --- !u!1 &1145030555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7529941400755304528, guid: 06da92ff77240497895afaccde98c340, type: 3}
@@ -7231,9 +7204,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2501236966106966164, guid: 06da92ff77240497895afaccde98c340, type: 3}
       insertIndex: -1
       addedObject: {fileID: 160126628}
-    - targetCorrespondingSourceObject: {fileID: 1744351235588130715, guid: 06da92ff77240497895afaccde98c340, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1143792901}
     - targetCorrespondingSourceObject: {fileID: 7961391115705582772, guid: 06da92ff77240497895afaccde98c340, type: 3}
       insertIndex: -1
       addedObject: {fileID: 18630747}
