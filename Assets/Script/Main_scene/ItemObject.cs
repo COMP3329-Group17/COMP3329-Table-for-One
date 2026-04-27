@@ -1,9 +1,9 @@
-// Attach this script to any 3D model that we want the player to be able to pick up.
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ItemObject : MonoBehaviour
 {
-    public ItemData referenceData; // Drag your ScriptableObject here
+    public ItemData referenceData;
     private Renderer objRenderer;
     private Color originalEmissionColor;
 
@@ -11,14 +11,24 @@ public class ItemObject : MonoBehaviour
     public Color highlightColor = Color.yellow;
     [Range(0, 5)] public float glowIntensity = 2f;
 
-    // Makes an object "glow" when the player looks at it
-    // NOT WORKING ATM
+    // GLOBAL MEMORY: Static variables stay in memory across scene changes.
+    private static List<string> pickedUpItems = new List<string>();
+
     void Start()
     {
+        // 1. PERSISTENCE CHECK
+        // If this item's name is in our list, it was picked up in a previous session.
+        if (pickedUpItems.Contains(gameObject.name))
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         objRenderer = GetComponent<Renderer>();
-        // Store the starting color (usually black/off)
         if (objRenderer != null)
         {
+            // Ensure the material can actually glow
+            objRenderer.material.EnableKeyword("_EMISSION");
             originalEmissionColor = objRenderer.material.GetColor("_EmissionColor");
         }
     }
@@ -29,38 +39,33 @@ public class ItemObject : MonoBehaviour
 
         if (isOn)
         {
-            // Enable the glow by multiplying color by intensity
             objRenderer.material.SetColor("_EmissionColor", highlightColor * glowIntensity);
-            objRenderer.material.EnableKeyword("_EMISSION");
         }
         else
         {
-            // Turn the glow back to original (off)
             objRenderer.material.SetColor("_EmissionColor", originalEmissionColor);
         }
     }
 
-    // This function runs when the player presses 'E' on the object.
     public void OnInteract()
     {
-        // Find the inventory in the scene and add this data
         InventoryMG inventory = FindFirstObjectByType<InventoryMG>();
         PlayerController player = FindFirstObjectByType<PlayerController>();
 
-        // If we found the inventory, proceed with picking it up.
         if (inventory != null)
         {
             inventory.AddItem(referenceData);
 
-            // If the player script exists, switch them to 'Inspecting' mode (freezes movement).
-            if (player != null)
+            // 2. ADD TO MEMORY
+            if (!pickedUpItems.Contains(gameObject.name))
             {
-                // Handle item rotation
-                player.StartInspecting(this.gameObject);
+                pickedUpItems.Add(gameObject.name);
             }
 
-
-     
+            if (player != null)
+            {
+                player.StartInspecting(this.gameObject);
+            }
         }
     }
 }

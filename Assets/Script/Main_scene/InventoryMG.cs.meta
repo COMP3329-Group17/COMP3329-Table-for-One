@@ -3,7 +3,10 @@ guid: D3we5CqrAnjvIg5zSjvxrt/xJAwbOaH9UnUNvpKxWxlSZ6w6X5sUjJE=
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - inventoryPanel: {instanceID: 0}
+  - slotParent: {instanceID: 0}
+  - slotPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
