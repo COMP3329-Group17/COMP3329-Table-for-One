@@ -96,7 +96,7 @@
       "url": "https://packages.tuanjie.cn"
     },
     "com.unity.textmeshpro": {
-      "version": "3.0.9",
+      "version": "3.0.10-t1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
