@@ -1,0 +1,2020 @@
+fileFormatVersion: 2
+guid: CC4evX6sUi5yEM1GByrL8t1WUEb8+jUkkf54fl3kl7TwaKHTT4SVn2w=
+ModelImporter:
+  serializedVersion: 22361
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    aCLCompressionLevel: 3
+    aCLCurvePrecision: 0.01
+    aCLFastSampleMode: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+    tuanjieGIEnable: 0
+    tuanjieGIGenSDFFactor: 1
+    tuanjieGIGenSDFBias: 0.25
+    tuanjieGIDoubleSidedMode: 0
+    tuanjieGIGenFacetNums: 12
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    totalVerticesCount: 828613
+    totalTrianglesCount: 931408
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  virtualGeometry:
+    virtualGeometry: 0
+    hasBoneWeight: 0
+    useTransparent: 0
+    setVGForeachMesh: 0
+    isFirstUse: 1
+    virtualGeometrySettings:
+      generateGeometryBuffer: 0
+      surfaceCompensation: 0
+      allMeshUse: 1
+      ignoreSimpleMesh: 0
+      transformScaleState: 0
+      isPossibleOverflow: 0
+    virtualGeometryPlatformSettings: []
+    selectedVGMeshes:
+    - index: 0
+      meshName: Chair
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 1
+      meshName: Chair_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 2
+      meshName: Chair_10
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 3
+      meshName: Chair_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 4
+      meshName: Chair_12
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 5
+      meshName: Chair_13
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 6
+      meshName: Chair_14
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 7
+      meshName: Chair_15
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 8
+      meshName: Chair_16
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 9
+      meshName: Chair_17
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 10
+      meshName: Chair_18
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 11
+      meshName: Chair_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 12
+      meshName: Chair_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 13
+      meshName: Chair_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 14
+      meshName: Chair_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 15
+      meshName: Chair_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 16
+      meshName: Chair_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 17
+      meshName: Chair_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 18
+      meshName: Chair_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 19
+      meshName: Cube
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 20
+      meshName: Cube.001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 21
+      meshName: Cube.002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 22
+      meshName: Cube.003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 23
+      meshName: Cube.004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 24
+      meshName: Cube.005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 25
+      meshName: Cube.006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 26
+      meshName: Cube.007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 27
+      meshName: Cube.008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 28
+      meshName: Cube.009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 29
+      meshName: Cube.010
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 30
+      meshName: Cube.011
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 31
+      meshName: Cube.012
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 32
+      meshName: Cube.013
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 33
+      meshName: Cube.014
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 34
+      meshName: Cube.015
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 35
+      meshName: Cube.016
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 36
+      meshName: Cube.017
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 37
+      meshName: Cube.018
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 38
+      meshName: Cube.019
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 39
+      meshName: Cube.020
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 40
+      meshName: Cube.021
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 41
+      meshName: Cube.022
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 42
+      meshName: Cube.023
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 43
+      meshName: Cube.024
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 44
+      meshName: Cube.025
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 45
+      meshName: Cube.026
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 46
+      meshName: Cube.027
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 47
+      meshName: Cube.028
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 48
+      meshName: Cube.029
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 49
+      meshName: Cube.030
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 50
+      meshName: Cube.031
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 51
+      meshName: Cube.032
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 52
+      meshName: Cube.033
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 53
+      meshName: Cube.034
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 54
+      meshName: Cube.035
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 55
+      meshName: Cube.036
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 56
+      meshName: Cube.037
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 57
+      meshName: Cube.038
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 58
+      meshName: Cube.039
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 59
+      meshName: Cube.040
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 60
+      meshName: Cube.041
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 61
+      meshName: Cube.042
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 62
+      meshName: Cube.043
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 63
+      meshName: Cube.044
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 64
+      meshName: Cube.045
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 65
+      meshName: Cube.046
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 66
+      meshName: Cube.047
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 67
+      meshName: Cube.048
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 68
+      meshName: Cube.049
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 69
+      meshName: Cube.050
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 70
+      meshName: Cube.051
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 71
+      meshName: Cube.052
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 72
+      meshName: Cube.053
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 73
+      meshName: Cube.054
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 74
+      meshName: Cube.055
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 75
+      meshName: Plane
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 76
+      meshName: Plane.001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 77
+      meshName: Plane.004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 78
+      meshName: balance
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 79
+      meshName: big_plates
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 80
+      meshName: big_plates_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 81
+      meshName: big_plates_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 82
+      meshName: big_plates_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 83
+      meshName: big_plates_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 84
+      meshName: big_plates_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 85
+      meshName: big_plates_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 86
+      meshName: big_plates_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 87
+      meshName: big_plates_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 88
+      meshName: bracing_piece
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 89
+      meshName: bracing_piece_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 90
+      meshName: bracing_piece_10
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 91
+      meshName: bracing_piece_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 92
+      meshName: bracing_piece_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 93
+      meshName: bracing_piece_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 94
+      meshName: bracing_piece_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 95
+      meshName: bracing_piece_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 96
+      meshName: bracing_piece_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 97
+      meshName: bracing_piece_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 98
+      meshName: bracing_piece_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 99
+      meshName: bracing_piece_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 100
+      meshName: Body_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 101
+      meshName: Btm L_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 102
+      meshName: Btm L_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 103
+      meshName: Btm R_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 104
+      meshName: Btm R_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 105
+      meshName: Top L_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 106
+      meshName: Top L_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 107
+      meshName: Top L_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 108
+      meshName: Top R_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 109
+      meshName: Top R_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 110
+      meshName: Top R_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 111
+      meshName: chinese_lamp
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 112
+      meshName: chinese_lamp_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 113
+      meshName: chinese_lamp_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 114
+      meshName: chinese_lamp_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 115
+      meshName: cooking_bench
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 116
+      meshName: cooking_bench_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 117
+      meshName: cooking_bench_door
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 118
+      meshName: cooking_bench_door_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 119
+      meshName: cooking_bench_door_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 120
+      meshName: cooking_bench_door_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 121
+      meshName: cooking_bench_door_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 122
+      meshName: cooking_bench_door_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 123
+      meshName: cooking_bench_door_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 124
+      meshName: cups
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 125
+      meshName: cups_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 126
+      meshName: cups_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 127
+      meshName: door
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 128
+      meshName: door_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 129
+      meshName: door_frame
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 130
+      meshName: door_frame_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 131
+      meshName: fans_with_light
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 132
+      meshName: fans_with_light_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 133
+      meshName: fans_with_light_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 134
+      meshName: fish_tank
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 135
+      meshName: floor
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 136
+      meshName: fortune_cat
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 137
+      meshName: fortune_cat_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 138
+      meshName: four_layers
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 139
+      meshName: four_layers_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 140
+      meshName: four_layers_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 141
+      meshName: fridge
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 142
+      meshName: fridge_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 143
+      meshName: fridge_doorframe
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 144
+      meshName: fridge_glass
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 145
+      meshName: fridge_inner
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 146
+      meshName: fridge_outer
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 147
+      meshName: fridge_wheels
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 148
+      meshName: gas_stove
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 149
+      meshName: gas_stove_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 150
+      meshName: gas_stove_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 151
+      meshName: pan
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 152
+      meshName: pan_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 153
+      meshName: pan_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 154
+      meshName: pan_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 155
+      meshName: pan_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 156
+      meshName: pan_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 157
+      meshName: pan_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 158
+      meshName: pan_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 159
+      meshName: pan_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 160
+      meshName: platform
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 161
+      meshName: platform_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 162
+      meshName: roof
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 163
+      meshName: round_table
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 164
+      meshName: round_table_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 165
+      meshName: saucer
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 166
+      meshName: saucer_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 167
+      meshName: saucer_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 168
+      meshName: saucer_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 169
+      meshName: saucer_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 170
+      meshName: saucer_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 171
+      meshName: saucer_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 172
+      meshName: saucer_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 173
+      meshName: saucer_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 174
+      meshName: saucer_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 175
+      meshName: short_cabinet
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 176
+      meshName: short_cabinet_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 177
+      meshName: sink
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 178
+      meshName: sink_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 179
+      meshName: small_plates
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 180
+      meshName: small_plates_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 181
+      meshName: small_plates_10
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 182
+      meshName: small_plates_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 183
+      meshName: small_plates_12
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 184
+      meshName: small_plates_13
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 185
+      meshName: small_plates_14
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 186
+      meshName: small_plates_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 187
+      meshName: small_plates_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 188
+      meshName: small_plates_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 189
+      meshName: small_plates_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 190
+      meshName: small_plates_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 191
+      meshName: small_plates_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 192
+      meshName: small_plates_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 193
+      meshName: small_plates_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 194
+      meshName: squared_table
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 195
+      meshName: squared_table_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 196
+      meshName: squared_table_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 197
+      meshName: squared_table_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 198
+      meshName: squared_table_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 199
+      meshName: stairs
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 200
+      meshName: steamer
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 201
+      meshName: steamer_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 202
+      meshName: steamer_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 203
+      meshName: steamer_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 204
+      meshName: steamer_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 205
+      meshName: steamer_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 206
+      meshName: steamer_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 207
+      meshName: stove_hood
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 208
+      meshName: stove_hood_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 209
+      meshName: stove_hood_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 210
+      meshName: stove_knob
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 211
+      meshName: stove_knob_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 212
+      meshName: stove_knob_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 213
+      meshName: stove_knob_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 214
+      meshName: stove_knob_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 215
+      meshName: stove_knob_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 216
+      meshName: stove_knob_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 217
+      meshName: table_condiment
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 218
+      meshName: table_condiment_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 219
+      meshName: table_condiment_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 220
+      meshName: table_condiment_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 221
+      meshName: table_condiment_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 222
+      meshName: table_condiment_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 223
+      meshName: table_condiment_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 224
+      meshName: table_condiment_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 225
+      meshName: two_layers
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 226
+      meshName: wall_to_basement
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 227
+      meshName: wall_to_basement_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 228
+      meshName: window
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 229
+      meshName: window_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 230
+      meshName: window_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 231
+      meshName: window_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 232
+      meshName: window_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 233
+      meshName: window_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 234
+      meshName: window_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    supportVGMeshes:
+    - index: 0
+      meshName: Chair
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 1
+      meshName: Chair_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 2
+      meshName: Chair_10
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 3
+      meshName: Chair_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 4
+      meshName: Chair_12
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 5
+      meshName: Chair_13
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 6
+      meshName: Chair_14
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 7
+      meshName: Chair_15
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 8
+      meshName: Chair_16
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 9
+      meshName: Chair_17
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 10
+      meshName: Chair_18
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 11
+      meshName: Chair_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 12
+      meshName: Chair_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 13
+      meshName: Chair_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 14
+      meshName: Chair_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 15
+      meshName: Chair_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 16
+      meshName: Chair_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 17
+      meshName: Chair_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 18
+      meshName: Chair_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 19
+      meshName: Cube
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 20
+      meshName: Cube.001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 21
+      meshName: Cube.002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 22
+      meshName: Cube.003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 23
+      meshName: Cube.004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 24
+      meshName: Cube.005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 25
+      meshName: Cube.006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 26
+      meshName: Cube.007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 27
+      meshName: Cube.008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 28
+      meshName: Cube.009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 29
+      meshName: Cube.010
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 30
+      meshName: Cube.011
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 31
+      meshName: Cube.012
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 32
+      meshName: Cube.013
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 33
+      meshName: Cube.014
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 34
+      meshName: Cube.015
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 35
+      meshName: Cube.016
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 36
+      meshName: Cube.017
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 37
+      meshName: Cube.018
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 38
+      meshName: Cube.019
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 39
+      meshName: Cube.020
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 40
+      meshName: Cube.021
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 41
+      meshName: Cube.022
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 42
+      meshName: Cube.023
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 43
+      meshName: Cube.024
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 44
+      meshName: Cube.025
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 45
+      meshName: Cube.026
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 46
+      meshName: Cube.027
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 47
+      meshName: Cube.028
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 48
+      meshName: Cube.029
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 49
+      meshName: Cube.030
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 50
+      meshName: Cube.031
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 51
+      meshName: Cube.032
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 52
+      meshName: Cube.033
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 53
+      meshName: Cube.034
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 54
+      meshName: Cube.035
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 55
+      meshName: Cube.036
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 56
+      meshName: Cube.037
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 57
+      meshName: Cube.038
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 58
+      meshName: Cube.039
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 59
+      meshName: Cube.040
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 60
+      meshName: Cube.041
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 61
+      meshName: Cube.042
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 62
+      meshName: Cube.043
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 63
+      meshName: Cube.044
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 64
+      meshName: Cube.045
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 65
+      meshName: Cube.046
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 66
+      meshName: Cube.047
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 67
+      meshName: Cube.048
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 68
+      meshName: Cube.049
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 69
+      meshName: Cube.050
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 70
+      meshName: Cube.051
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 71
+      meshName: Cube.052
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 72
+      meshName: Cube.053
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 73
+      meshName: Cube.054
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 74
+      meshName: Cube.055
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 75
+      meshName: Plane
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 76
+      meshName: Plane.001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 77
+      meshName: Plane.004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 78
+      meshName: balance
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 79
+      meshName: big_plates
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 80
+      meshName: big_plates_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 81
+      meshName: big_plates_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 82
+      meshName: big_plates_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 83
+      meshName: big_plates_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 84
+      meshName: big_plates_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 85
+      meshName: big_plates_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 86
+      meshName: big_plates_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 87
+      meshName: big_plates_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 88
+      meshName: bracing_piece
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 89
+      meshName: bracing_piece_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 90
+      meshName: bracing_piece_10
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 91
+      meshName: bracing_piece_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 92
+      meshName: bracing_piece_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 93
+      meshName: bracing_piece_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 94
+      meshName: bracing_piece_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 95
+      meshName: bracing_piece_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 96
+      meshName: bracing_piece_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 97
+      meshName: bracing_piece_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 98
+      meshName: bracing_piece_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 99
+      meshName: bracing_piece_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 100
+      meshName: Body_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 101
+      meshName: Btm L_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 102
+      meshName: Btm L_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 103
+      meshName: Btm R_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 104
+      meshName: Btm R_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 105
+      meshName: Top L_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 106
+      meshName: Top L_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 107
+      meshName: Top L_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 108
+      meshName: Top R_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 109
+      meshName: Top R_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 110
+      meshName: Top R_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 111
+      meshName: chinese_lamp
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 112
+      meshName: chinese_lamp_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 113
+      meshName: chinese_lamp_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 114
+      meshName: chinese_lamp_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 115
+      meshName: cooking_bench
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 116
+      meshName: cooking_bench_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 117
+      meshName: cooking_bench_door
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 118
+      meshName: cooking_bench_door_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 119
+      meshName: cooking_bench_door_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 120
+      meshName: cooking_bench_door_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 121
+      meshName: cooking_bench_door_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 122
+      meshName: cooking_bench_door_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 123
+      meshName: cooking_bench_door_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 124
+      meshName: cups
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 125
+      meshName: cups_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 126
+      meshName: cups_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 127
+      meshName: door
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 128
+      meshName: door_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 129
+      meshName: door_frame
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 130
+      meshName: door_frame_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 131
+      meshName: fans_with_light
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 132
+      meshName: fans_with_light_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 133
+      meshName: fans_with_light_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 134
+      meshName: fish_tank
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 135
+      meshName: floor
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 136
+      meshName: fortune_cat
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 137
+      meshName: fortune_cat_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 138
+      meshName: four_layers
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 139
+      meshName: four_layers_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 140
+      meshName: four_layers_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 141
+      meshName: fridge
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 142
+      meshName: fridge_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 143
+      meshName: fridge_doorframe
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 144
+      meshName: fridge_glass
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 145
+      meshName: fridge_inner
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 146
+      meshName: fridge_outer
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 147
+      meshName: fridge_wheels
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 148
+      meshName: gas_stove
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 149
+      meshName: gas_stove_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 150
+      meshName: gas_stove_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 151
+      meshName: pan
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 152
+      meshName: pan_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 153
+      meshName: pan_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 154
+      meshName: pan_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 155
+      meshName: pan_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 156
+      meshName: pan_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 157
+      meshName: pan_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 158
+      meshName: pan_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 159
+      meshName: pan_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 160
+      meshName: platform
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 161
+      meshName: platform_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 162
+      meshName: roof
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 163
+      meshName: round_table
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 164
+      meshName: round_table_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 165
+      meshName: saucer
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 166
+      meshName: saucer_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 167
+      meshName: saucer_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 168
+      meshName: saucer_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 169
+      meshName: saucer_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 170
+      meshName: saucer_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 171
+      meshName: saucer_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 172
+      meshName: saucer_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 173
+      meshName: saucer_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 174
+      meshName: saucer_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 175
+      meshName: short_cabinet
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 176
+      meshName: short_cabinet_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 177
+      meshName: sink
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 178
+      meshName: sink_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 179
+      meshName: small_plates
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 180
+      meshName: small_plates_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 181
+      meshName: small_plates_10
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 182
+      meshName: small_plates_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 183
+      meshName: small_plates_12
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 184
+      meshName: small_plates_13
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 185
+      meshName: small_plates_14
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 186
+      meshName: small_plates_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 187
+      meshName: small_plates_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 188
+      meshName: small_plates_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 189
+      meshName: small_plates_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 190
+      meshName: small_plates_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 191
+      meshName: small_plates_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 192
+      meshName: small_plates_8
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 193
+      meshName: small_plates_9
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 194
+      meshName: squared_table
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 195
+      meshName: squared_table_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 196
+      meshName: squared_table_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 197
+      meshName: squared_table_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 198
+      meshName: squared_table_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 199
+      meshName: stairs
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 200
+      meshName: steamer
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 201
+      meshName: steamer_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 202
+      meshName: steamer_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 203
+      meshName: steamer_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 204
+      meshName: steamer_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 205
+      meshName: steamer_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 206
+      meshName: steamer_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 207
+      meshName: stove_hood
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 208
+      meshName: stove_hood_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 209
+      meshName: stove_hood_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 210
+      meshName: stove_knob
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 211
+      meshName: stove_knob_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 212
+      meshName: stove_knob_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 213
+      meshName: stove_knob_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 214
+      meshName: stove_knob_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 215
+      meshName: stove_knob_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 216
+      meshName: stove_knob_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 217
+      meshName: table_condiment
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 218
+      meshName: table_condiment_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 219
+      meshName: table_condiment_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 220
+      meshName: table_condiment_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 221
+      meshName: table_condiment_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 222
+      meshName: table_condiment_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 223
+      meshName: table_condiment_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 224
+      meshName: table_condiment_7
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 225
+      meshName: two_layers
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 226
+      meshName: wall_to_basement
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 227
+      meshName: wall_to_basement_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 228
+      meshName: window
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 229
+      meshName: window_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 230
+      meshName: window_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 231
+      meshName: window_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 232
+      meshName: window_4
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 233
+      meshName: window_5
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 234
+      meshName: window_6
+      lodLevel: 0
+      meshGeometryBuffer: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  overrideDefaultPose: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    namedPoseList:
+    - name: Default
+      skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    defaultPoseIndex: -1
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
