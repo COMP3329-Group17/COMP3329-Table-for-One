@@ -6928,6 +6928,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.455
       objectReference: {fileID: 0}
+    - target: {fileID: 6091691005439393118, guid: 06da92ff77240497895afaccde98c340, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091691005439393118, guid: 06da92ff77240497895afaccde98c340, type: 3}
+      propertyPath: m_TagString
+      value: MinigameTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 6158857131703324843, guid: 06da92ff77240497895afaccde98c340, type: 3}
       propertyPath: m_Color.b
       value: 0.3018868
@@ -7108,7 +7116,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: MinigameTrigger
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5166061826940656551, guid: 06da92ff77240497895afaccde98c340, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5013284174774119455, guid: 06da92ff77240497895afaccde98c340, type: 3}
     m_AddedGameObjects:
@@ -7821,6 +7830,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5474393824542392077, guid: 06da92ff77240497895afaccde98c340, type: 3}
       insertIndex: -1
       addedObject: {fileID: 484309857}
+    - targetCorrespondingSourceObject: {fileID: 6091691005439393118, guid: 06da92ff77240497895afaccde98c340, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625093993}
+    - targetCorrespondingSourceObject: {fileID: 6091691005439393118, guid: 06da92ff77240497895afaccde98c340, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1625094000}
     - targetCorrespondingSourceObject: {fileID: 8228978652066777701, guid: 06da92ff77240497895afaccde98c340, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1625093989}
@@ -7873,6 +7888,45 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.092412174, y: 0.03915408, z: 0.13241218}
   m_Center: {x: -0.00000011920929, y: -9.3132246e-10, z: -1.11022296e-16}
+--- !u!1 &1625093991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6091691005439393118, guid: 06da92ff77240497895afaccde98c340, type: 3}
+  m_PrefabInstance: {fileID: 1625093987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1625093993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625093991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1daf131215d7c447adb47200c2066d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Outside_World
+--- !u!65 &1625094000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625093991}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.000006, y: 16.630043, z: 10.000001}
+  m_Center: {x: -0, y: -6.9294286, z: 5.617852e-14}
 --- !u!1 &1628597085 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4770777636079936799, guid: 06da92ff77240497895afaccde98c340, type: 3}
@@ -10512,16 +10566,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 193873121}
     m_Modifications:
     - target: {fileID: 3018869435583596105, guid: 6090c9fd57473445fbee6c7591fa37c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09488041
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018869435583596105, guid: 6090c9fd57473445fbee6c7591fa37c8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.118
+      value: 1.396
       objectReference: {fileID: 0}
     - target: {fileID: 3018869435583596105, guid: 6090c9fd57473445fbee6c7591fa37c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.001
+      value: 0.004
       objectReference: {fileID: 0}
     - target: {fileID: 3018869435583596105, guid: 6090c9fd57473445fbee6c7591fa37c8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.053
+      value: 4.025
       objectReference: {fileID: 0}
     - target: {fileID: 3018869435583596105, guid: 6090c9fd57473445fbee6c7591fa37c8, type: 3}
       propertyPath: m_LocalRotation.w

@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cupboard.scene
     guid: d9eb131cbae9db9429973cac102421f7
+  - enabled: 1
+    path: Assets/Scenes/Outside_World.scene
+    guid: 5e72746cacf0b4c4d860a566c395e12a
   m_BuildProfiles: []
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:

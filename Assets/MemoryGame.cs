@@ -67,6 +67,7 @@ public class MemoryGame : MonoBehaviour
     void OnGUI()
 {
     GUI.skin.box.fontSize = 42;  // Set to 24pt
+    GUI.skin.box.normal.textColor = Color.white;
     float boxWidth = 1500f;
     float boxHeight = 160f;
     float boxX = (Screen.width - boxWidth) / 2;

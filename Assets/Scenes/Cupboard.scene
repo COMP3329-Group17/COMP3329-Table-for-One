@@ -236,6 +236,10 @@ PrefabInstance:
       propertyPath: zoomPosition.z
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8065204088131323188, guid: 401414e4c32cc47218ea8550ae802eb9, type: 3}
+      propertyPath: delayBetweenGlows
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 8082835855594898997, guid: 401414e4c32cc47218ea8550ae802eb9, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1000

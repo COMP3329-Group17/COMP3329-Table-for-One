@@ -17,41 +17,35 @@ public class PlayerInteraction : MonoBehaviour
         PlayerController pc = FindFirstObjectByType<PlayerController>();
         if (pc == null) return;
 
-        // If already inspecting, let PlayerController handle the 'E' input
         if (pc.currentState != PlayerController.PlayerState.Exploration)
         {
             HideFeedback();
             return;
         }
 
-        // Only run this if we are in Exploration mode
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
         if (Physics.SphereCast(ray, sphereRadius, out hit, interactionDistance, ~playerLayer))
         {
+            // Check if the layer is correct
             if (((1 << hit.collider.gameObject.layer) & interactableLayer) != 0)
             {
-                ItemObject item = hit.collider.GetComponent<ItemObject>();
-                if (item != null)
-                {
-                    ShowFeedback(hit.collider.gameObject);
+                ShowFeedback(hit.collider.gameObject);
 
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        // This triggers pc.StartInspecting via item.OnInteract
-                        item.OnInteract();
-                    }
-                }
-                Lock lockScript = hit.collider.GetComponent<Lock>();
-                if (lockScript != null)
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    ShowFeedback(hit.collider.gameObject);
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        // We pass the currently equipped item to the lock
-                        lockScript.AttemptUnlock(InventoryMG.activeItem);
-                    }
+                    // 1. Check for normal Items (Inspect)
+                    ItemObject item = hit.collider.GetComponent<ItemObject>();
+                    if (item != null) item.OnInteract();
+
+                    // 2. Check for Locks (Use Key)
+                    Lock lockScript = hit.collider.GetComponent<Lock>();
+                    if (lockScript != null) lockScript.AttemptUnlock(InventoryMG.activeItem);
+
+                    // 3. Check for direct Minigame Triggers (like the Cupboard/Table)
+                    MinigameTrigger trigger = hit.collider.GetComponent<MinigameTrigger>();
+                    if (trigger != null) trigger.StartMinigame();
                 }
             }
             else { HideFeedback(); }
