@@ -65,15 +65,15 @@ public class MemoryGame : MonoBehaviour
     }
 
     void OnGUI()
-    {
-        GUIStyle boxStyle = new GUIStyle(GUI.skin.box);
-        boxStyle.alignment = TextAnchor.MiddleCenter;
-        boxStyle.fontSize = 14;
-        boxStyle.normal.textColor = Color.white;
-        boxStyle.fontStyle = FontStyle.Normal;
-
-        GUI.Box(new Rect(Screen.width / 2 - 200, 20, 400, 70), displayText, boxStyle);
-    }
+{
+    GUI.skin.box.fontSize = 42;  // Set to 24pt
+    float boxWidth = 1500f;
+    float boxHeight = 160f;
+    float boxX = (Screen.width - boxWidth) / 2;
+    float boxY = 120f;
+    
+    GUI.Box(new Rect(boxX, boxY, boxWidth, boxHeight), displayText);
+}
 
     public void OnJarClicked(int jarIndex)
     {

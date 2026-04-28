@@ -437,9 +437,14 @@ public class ZodiacOrderGame : MonoBehaviour
         UpdateAllCircleColors();
         Debug.Log("Game reset! All steamers returned to start positions.");
     }
-    void OnGUI()
-    {
-    GUI.Box(new Rect(Screen.width / 2 - 200, 50, 400, 50), instructionsText);
-    }
-
+void OnGUI()
+{
+    GUI.skin.box.fontSize = 42;  // Set to 24pt
+    float boxWidth = 1500f;
+    float boxHeight = 160f;
+    float boxX = (Screen.width - boxWidth) / 2;
+    float boxY = 120f;
+    
+    GUI.Box(new Rect(boxX, boxY, boxWidth, boxHeight), instructionsText);
+}
 }
