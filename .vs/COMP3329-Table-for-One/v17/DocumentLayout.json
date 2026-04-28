@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\KeyHole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Main_scene\\KeyHole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\ThirdPersonControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Main_scene\\ThirdPersonControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\InventoryMG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Main_scene\\InventoryMG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\Mini_game_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Main_scene\\Mini_game_trigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,11 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InventoryMG.cs",
+              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\InventoryMG.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Main_scene\\InventoryMG.cs",
+              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\InventoryMG.cs",
+              "RelativeToolTip": "Assets\\Script\\Main_scene\\InventoryMG.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T19:24:04.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "KeyHole.cs",
+              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\KeyHole.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Main_scene\\KeyHole.cs",
+              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\KeyHole.cs",
+              "RelativeToolTip": "Assets\\Script\\Main_scene\\KeyHole.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T19:22:36.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ThirdPersonControl.cs",
+              "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
+              "ToolTip": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
+              "RelativeToolTip": "Assets\\Script\\Main_scene\\ThirdPersonControl.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAQwP8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T16:22:42.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Mini_game_trigger.cs",
               "DocumentMoniker": "D:\\HKU exchange courses\\COMP_3329\\git repository\\COMP3329-Table-for-One\\Assets\\Script\\Main_scene\\Mini_game_trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Main_scene\\Mini_game_trigger.cs",

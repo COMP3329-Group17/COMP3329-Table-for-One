@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.scene
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/FreezerDoor.scene
+    guid: 8428b9b453c3c4e958afd71e585a64e7
+  - enabled: 1
+    path: Assets/Scenes/Cupboard.scene
+    guid: d9eb131cbae9db9429973cac102421f7
   m_BuildProfiles: []
   m_configObjects: {}
   m_SlimFeaturesWeixinMiniGame:
