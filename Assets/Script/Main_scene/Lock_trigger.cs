@@ -14,12 +14,12 @@ public class Lock : MonoBehaviour
     public string wrongItemMessage = "I need a specific item for this...";
 
     [Header("Minigame Settings")]
-    private string targetScene = "Capboard"; // Hardcoded as requested
+    private string targetScene = "Cupboard"; // Hardcoded as requested
 
     public void AttemptUnlock(ItemData playerActiveItem)
     {
         // 1. Check if the player actually has an item selected
-        if (playerActiveItem == null)
+        if (playerActiveItem == null)   
         {
             Debug.Log("I'm not holding anything.");
             return;

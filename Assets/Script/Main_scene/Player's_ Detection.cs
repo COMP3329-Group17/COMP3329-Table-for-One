@@ -43,6 +43,16 @@ public class PlayerInteraction : MonoBehaviour
                         item.OnInteract();
                     }
                 }
+                Lock lockScript = hit.collider.GetComponent<Lock>();
+                if (lockScript != null)
+                {
+                    ShowFeedback(hit.collider.gameObject);
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        // We pass the currently equipped item to the lock
+                        lockScript.AttemptUnlock(InventoryMG.activeItem);
+                    }
+                }
             }
             else { HideFeedback(); }
         }
