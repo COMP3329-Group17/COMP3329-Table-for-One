@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float rotationSpeed = 10f; // Speed of the U-Turn
+    public float rotationSpeed = 10f;
     public float itemRotateSpeed = 1500f;
     public float gravity = -9.81f;
     private float verticalVelocity;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     [Header("Camera Settings")]
     public Transform cameraTarget;
     public float mouseSensitivity = 2f;
-    public float tpDistance = 3.0f; // Increased for better view
+    public float tpDistance = 3.0f;
     public float fpHeight = 1.8f;
 
     [Header("Inspection Settings")]
@@ -48,6 +48,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         if (Camera.main != null) cam = Camera.main.transform;
 
+        // Restore position if returning from a minigame
         if (hasSavedPosition)
         {
             controller.enabled = false;
@@ -56,29 +57,25 @@ public class PlayerController : MonoBehaviour
             controller.enabled = true;
         }
 
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked; // Locked for gameplay
+        Cursor.visible = false;
 
         yaw = transform.eulerAngles.y;
     }
 
     void Update()
     {
+        // Toggle View
         if (Input.GetKeyDown(KeyCode.V) && currentState == PlayerState.Exploration)
         {
             isFirstPerson = !isFirstPerson;
         }
 
+        // Toggle Inventory
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             InventoryMG inv = FindFirstObjectByType<InventoryMG>();
             if (inv != null) inv.ToggleInventory();
-        }
-
-        //trying to unlock a door
-        if (Input.GetKeyDown(KeyCode.F) && currentState == PlayerState.Exploration)
-        {
-            CheckForLock();
         }
 
         switch (currentState)
@@ -87,15 +84,18 @@ public class PlayerController : MonoBehaviour
                 HandleCamera();
                 HandleMovement();
                 break;
+
             case PlayerState.Inspecting:
                 HandleInspectionRotation();
-                // Only allow exit if at least 0.2 seconds have passed
+                // Close/Collect after a short delay to prevent instant-close
                 if (Input.GetKeyDown(KeyCode.E) && Time.time > stateChangeTime + 0.2f)
                 {
-                    CollectItem(); // Use a new function to add to bag
+                    CollectItem();
                 }
                 break;
+
             case PlayerState.Minigame:
+                // Common exit key for minigames
                 if (Input.GetKeyDown(KeyCode.Space)) ExitMinigame();
                 break;
         }
@@ -111,7 +111,6 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
 
-        // 1. Get Camera directions (ignoring tilt)
         Vector3 camForward = cam.forward;
         Vector3 camRight = cam.right;
         camForward.y = 0;
@@ -119,20 +118,16 @@ public class PlayerController : MonoBehaviour
         camForward.Normalize();
         camRight.Normalize();
 
-        // 2. Calculate Move Direction based on Input
         Vector3 desiredMoveDir = (camForward * v + camRight * h).normalized;
 
         if (desiredMoveDir.magnitude >= 0.1f)
         {
             if (isFirstPerson)
             {
-                // In First Person, the body still snaps to the mouse yaw
                 transform.rotation = Quaternion.Euler(0, yaw, 0);
             }
             else
             {
-                // IN THIRD PERSON: This creates the U-Turn effect
-                // The character rotates to face the direction of movement
                 Quaternion targetRotation = Quaternion.LookRotation(desiredMoveDir);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
             }
@@ -140,7 +135,6 @@ public class PlayerController : MonoBehaviour
             controller.Move(desiredMoveDir * moveSpeed * Time.deltaTime);
         }
 
-        // Apply Gravity
         controller.Move(Vector3.up * verticalVelocity * Time.deltaTime);
 
         if (animator != null)
@@ -160,16 +154,13 @@ public class PlayerController : MonoBehaviour
 
         if (isFirstPerson)
         {
-            // Body follows mouse yaw instantly in FP
             transform.rotation = Quaternion.Euler(0, yaw, 0);
-
             Vector3 eyePosition = transform.position + Vector3.up * (fpHeight * scale);
             cam.position = eyePosition + (transform.forward * 0.15f);
             cam.rotation = Quaternion.Euler(pitch, yaw, 0);
         }
         else
         {
-            // THIRD PERSON: Camera orbits, but body does NOT follow mouse instantly
             Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);
             Vector3 targetPos = transform.position + Vector3.up * (fpHeight * scale);
             Vector3 desiredPos = targetPos + (rotation * Vector3.back) * (tpDistance * scale);
@@ -181,7 +172,7 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    #region INSPECTION & MINIGAME
+    #region INSPECTION & TRANSITIONS
 
     public void StartInspecting(GameObject obj)
     {
@@ -189,14 +180,12 @@ public class PlayerController : MonoBehaviour
         SetState(PlayerState.Inspecting);
 
         obj.transform.SetParent(inspectionTarget);
-        // CRITICAL: Force the object to the exact center of your anchor
         obj.transform.localPosition = Vector3.zero;
         obj.transform.localRotation = Quaternion.identity;
 
         if (inspectionLight != null) inspectionLight.enabled = true;
         if (blurOverlay != null) blurOverlay.SetActive(true);
 
-        // Disable physics so it doesn't fall out of your hands
         if (obj.TryGetComponent<Rigidbody>(out Rigidbody rb)) rb.isKinematic = true;
     }
 
@@ -212,14 +201,25 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void StopInspecting()
+    public void CollectItem()
     {
         if (currentItem != null)
         {
+            ItemObject itemScript = currentItem.GetComponent<ItemObject>();
+            if (itemScript != null)
+            {
+                InventoryMG inv = FindFirstObjectByType<InventoryMG>();
+                if (inv != null) inv.AddItem(itemScript.referenceData);
+
+                // Important: Tell the item to save its name to pickedUpItems list
+                // This prevents it from respawning when you return to the scene
+                itemScript.RegisterPickup();
+            }
+
             if (inspectionLight != null) inspectionLight.enabled = false;
             if (blurOverlay != null) blurOverlay.SetActive(false);
-            currentItem.SetActive(false);
-            currentItem.transform.SetParent(null);
+
+            Destroy(currentItem);
             currentItem = null;
         }
         SetState(PlayerState.Exploration);
@@ -240,51 +240,21 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
-   
-
     public void SetState(PlayerState newState)
     {
         currentState = newState;
-        stateChangeTime = Time.time; // Track when the state changed
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
-    void CheckForLock()
-    {
-        Ray ray = new Ray(cam.position, cam.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, 3f))
+        stateChangeTime = Time.time;
+
+        if (newState == PlayerState.Exploration)
         {
-            if (hit.collider.TryGetComponent(out KeyHole lockScript))
-            {
-                // We find the InventoryMG script
-                InventoryMG inv = FindFirstObjectByType<InventoryMG>();
-                if (inv != null)
-                {
-                    // We pass the activeItem we just created above!
-                    lockScript.AttemptUnlock(InventoryMG.activeItem);
-                }
-            }
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
-    }
-
-    public void CollectItem()
-    {
-        if (currentItem != null)
+        else
         {
-            ItemObject itemScript = currentItem.GetComponent<ItemObject>();
-            if (itemScript != null)
-            {
-                InventoryMG inv = FindFirstObjectByType<InventoryMG>();
-                if (inv != null) inv.AddItem(itemScript.referenceData); // Add data to bag
-            }
-
-            if (inspectionLight != null) inspectionLight.enabled = false;
-            if (blurOverlay != null) blurOverlay.SetActive(false);
-
-            Destroy(currentItem); // Permanently remove from world
-            currentItem = null;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
-        SetState(PlayerState.Exploration);
     }
 
     #endregion
