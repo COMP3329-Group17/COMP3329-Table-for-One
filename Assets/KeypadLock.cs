@@ -81,14 +81,16 @@ public class KeypadLock : MonoBehaviour
         UpdateDisplay();
     }
     
-    void OnGUI()
-    {
-        GUIStyle style = new GUIStyle(GUI.skin.box);
-        style.alignment = TextAnchor.MiddleCenter;
-        style.fontSize = 14;
-        style.normal.textColor = Color.white;
-        GUI.Box(new Rect(Screen.width / 2 - 250, 30, 500, 60), instructionsText, style);
-    }
+   void OnGUI()
+{
+    GUI.skin.box.fontSize = 42;  // Set to 24pt
+    float boxWidth = 1500f;
+    float boxHeight = 160f;
+    float boxX = (Screen.width - boxWidth) / 2;
+    float boxY = 120f;
+    
+    GUI.Box(new Rect(boxX, boxY, boxWidth, boxHeight), instructionsText);
+}
     
     void Update()
     {
