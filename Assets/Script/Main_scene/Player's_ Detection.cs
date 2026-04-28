@@ -14,66 +14,40 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        // Only allow interaction if we aren't already busy inspecting something
         PlayerController pc = FindFirstObjectByType<PlayerController>();
-        if (pc != null && pc.currentState != PlayerController.PlayerState.Exploration)
+        if (pc == null) return;
+
+        // If already inspecting, let PlayerController handle the 'E' input
+        if (pc.currentState != PlayerController.PlayerState.Exploration)
         {
             HideFeedback();
             return;
         }
 
-        // Shoot a ray from the center of the screen
+        // Only run this if we are in Exploration mode
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
-        // This tells the ray: "Hit everything EXCEPT the player."
+
         if (Physics.SphereCast(ray, sphereRadius, out hit, interactionDistance, ~playerLayer))
         {
-
-            // Check if the ray is hitting on a interectable object 
             if (((1 << hit.collider.gameObject.layer) & interactableLayer) != 0)
             {
-                if (hit.collider.GetComponent<MinigameTrigger>() != null || hit.collider.GetComponent<ItemObject>() != null)
+                ItemObject item = hit.collider.GetComponent<ItemObject>();
+                if (item != null)
                 {
-                    // trigger a 'Press E to Pick Up' UI text here
                     ShowFeedback(hit.collider.gameObject);
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        // 1. Check if we hit an item (Your existing logic)
-                        ItemObject item = hit.collider.GetComponent<ItemObject>();
-                        if (item != null)
-                        {
-                            item.OnInteract();
-                            return;
-                        }
-
-                        // 2. Check if we hit the Minigame (The new logic)
-                        if (hit.collider.CompareTag("MinigameTrigger"))
-                        {
-                            HideFeedback();
-
-                            // Get the script attached to the table and tell it to start
-                            MinigameTrigger trigger = hit.collider.GetComponent<MinigameTrigger>();
-                            if (trigger != null)
-                            {
-                                trigger.StartMinigame();
-                            }
-                        }
+                        // This triggers pc.StartInspecting via item.OnInteract
+                        item.OnInteract();
                     }
                 }
             }
-            else
-            {
-                HideFeedback();
-
-            }
+            else { HideFeedback(); }
         }
-        else
-        {
-            HideFeedback();
-        }
+        else { HideFeedback(); }
     }
-
 
     // UI function
     void ShowFeedback(GameObject obj)

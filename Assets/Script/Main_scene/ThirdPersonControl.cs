@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     private float pitch;
     private float yaw;
     private bool isFirstPerson = false;
+    private float stateChangeTime;
 
     void Start()
     {
@@ -88,7 +89,11 @@ public class PlayerController : MonoBehaviour
                 break;
             case PlayerState.Inspecting:
                 HandleInspectionRotation();
-                if (Input.GetKeyDown(KeyCode.E)) StopInspecting();
+                // Only allow exit if at least 0.2 seconds have passed
+                if (Input.GetKeyDown(KeyCode.E) && Time.time > stateChangeTime + 0.2f)
+                {
+                    CollectItem(); // Use a new function to add to bag
+                }
                 break;
             case PlayerState.Minigame:
                 if (Input.GetKeyDown(KeyCode.Space)) ExitMinigame();
@@ -183,11 +188,15 @@ public class PlayerController : MonoBehaviour
         currentItem = obj;
         SetState(PlayerState.Inspecting);
 
-        obj.transform.position = inspectionTarget.position;
         obj.transform.SetParent(inspectionTarget);
+        // CRITICAL: Force the object to the exact center of your anchor
+        obj.transform.localPosition = Vector3.zero;
+        obj.transform.localRotation = Quaternion.identity;
 
         if (inspectionLight != null) inspectionLight.enabled = true;
         if (blurOverlay != null) blurOverlay.SetActive(true);
+
+        // Disable physics so it doesn't fall out of your hands
         if (obj.TryGetComponent<Rigidbody>(out Rigidbody rb)) rb.isKinematic = true;
     }
 
@@ -231,9 +240,12 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene("MainScene");
     }
 
+   
+
     public void SetState(PlayerState newState)
     {
         currentState = newState;
+        stateChangeTime = Time.time; // Track when the state changed
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -253,6 +265,26 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void CollectItem()
+    {
+        if (currentItem != null)
+        {
+            ItemObject itemScript = currentItem.GetComponent<ItemObject>();
+            if (itemScript != null)
+            {
+                InventoryMG inv = FindFirstObjectByType<InventoryMG>();
+                if (inv != null) inv.AddItem(itemScript.referenceData); // Add data to bag
+            }
+
+            if (inspectionLight != null) inspectionLight.enabled = false;
+            if (blurOverlay != null) blurOverlay.SetActive(false);
+
+            Destroy(currentItem); // Permanently remove from world
+            currentItem = null;
+        }
+        SetState(PlayerState.Exploration);
     }
 
     #endregion

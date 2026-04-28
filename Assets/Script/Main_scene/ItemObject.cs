@@ -49,23 +49,12 @@ public class ItemObject : MonoBehaviour
 
     public void OnInteract()
     {
-        InventoryMG inventory = FindFirstObjectByType<InventoryMG>();
         PlayerController player = FindFirstObjectByType<PlayerController>();
 
-        if (inventory != null)
+        if (player != null)
         {
-            inventory.AddItem(referenceData);
-
-            // 2. ADD TO MEMORY
-            if (!pickedUpItems.Contains(gameObject.name))
-            {
-                pickedUpItems.Add(gameObject.name);
-            }
-
-            if (player != null)
-            {
-                player.StartInspecting(this.gameObject);
-            }
+            // Only trigger the start of inspection
+            player.StartInspecting(this.gameObject);
         }
     }
 }
