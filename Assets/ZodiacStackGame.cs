@@ -439,7 +439,7 @@ public class ZodiacOrderGame : MonoBehaviour
     }
     void OnGUI()
     {
-    GUI.Box(new Rect(Screen.width / 2 - 200, 50, 400, 50), instructionsText);
+    GUI.Box(new Rect((Screen.width / 2), 50, 800, 100), instructionsText);
     }
 
 }
